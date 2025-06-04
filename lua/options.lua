@@ -1,4 +1,6 @@
-vim.cmd("let g:netrw_liststyle = 3")
+-- disable netrw at the very start of your init.lua (nvim-tree)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 -- backspace
 vim.opt.backspace = "indent,eol,start" -- how backspace works at start of line
