@@ -1,3 +1,9 @@
+-- Make sure to setup `mapleader` and `maplocalleader` before
+-- loading lazy.nvim so that mappings are correct.
+-- (for this config, double check init.lua and make sure this file is loaded before lazy.nvim)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 -- disable netrw at the very start of your init.lua (nvim-tree)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1

@@ -1,9 +1,3 @@
--- Make sure to setup `mapleader` and `maplocalleader` before
--- loading lazy.nvim so that mappings are correct.
--- (for this config, double check init.lua and make sure this file is loaded before lazy.nvim)
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
 -- cut / copy / paste
 vim.keymap.set("n", "<leader>y", "\"*y", { desc = "Copy to system clipboard" }) 
 vim.keymap.set("v", "<leader>y", "\"*y", { desc = "Copy to system clipboard" })
