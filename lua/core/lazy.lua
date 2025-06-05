@@ -20,7 +20,15 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
   },
-  install = { colorscheme = { "habamax" } },
+  install = { colorscheme = { "tokyonight", "habamax" } },
+
+  -- suppress 'Config change detected' messages
+  change_detection = {
+    enabled = true,
+    notify = false,
+  },
+
+  -- check for plugin updates
   checker = {
     enabled = true,
     notify = false,
