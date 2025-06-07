@@ -1,16 +1,16 @@
 return {
-  "nvim-tree/nvim-tree.lua",
-  version = "*",
+  'nvim-tree/nvim-tree.lua',
+  version = '*',
   lazy = false,
   dependencies = {
-    "nvim-tree/nvim-web-devicons",
+    'nvim-tree/nvim-web-devicons',
   },
   config = function()
-    local nvimtree = require("nvim-tree")
+    local nvimtree = require('nvim-tree')
 
     nvimtree.setup({
       sort = {
-        sorter = "case_sensitive",
+        sorter = 'case_sensitive',
       },
       view = {
         width = 36,
@@ -31,7 +31,7 @@ return {
       filters = {
         dotfiles = false,
         custom = {
-          ".DS_Store",
+          '.DS_Store',
         },
       },
       git = {
@@ -39,9 +39,11 @@ return {
       },
     })
 
+    -- stylua: ignore start
     vim.keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<cr>", { desc = "Toggle file explorer" })
     vim.keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<cr>", { desc = "Toggle file explorer on current file" })
     vim.keymap.set("n", "<leader>ew", "<cmd>NvimTreeCollapse<cr>", { desc = "Collapse file explorer" })
     vim.keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<cr>", { desc = "Refresh file explorer" })
+    -- stylua: ignore end
   end,
 }

@@ -1,5 +1,5 @@
 return {
-  "folke/snacks.nvim",
+  'folke/snacks.nvim',
   priority = 1000,
   lazy = false,
   opts = {
@@ -23,6 +23,7 @@ return {
     },
   },
   keys = {
+    -- stylua: ignore start
     -- Top Pickers & Explorer
     { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
     { "<leader>,", function() Snacks.picker.buffers() end, desc = "Buffers" },
@@ -80,5 +81,6 @@ return {
     { "gy", function() Snacks.picker.lsp_type_definitions() end, desc = "Goto T[y]pe Definition" },
     { "<leader>sx", function() Snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
     { "<leader>sS", function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
+    -- stylua: ignore end
   },
 }

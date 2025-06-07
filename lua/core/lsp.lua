@@ -1,11 +1,11 @@
-vim.lsp.config("lua_ls", {
+vim.lsp.config('lua_ls', {
   settings = {
     Lua = {
       diagnostics = {
-        globals = { "vim", "Snacks" },
+        globals = { 'vim', 'Snacks' },
       },
       completion = {
-        callSnippet = "Replace",
+        callSnippet = 'Replace',
       },
       telemetry = { enable = false },
       workspace = { checkThirdParty = false },
@@ -14,7 +14,7 @@ vim.lsp.config("lua_ls", {
 })
 
 vim.lsp.enable({
-  "lua_ls",
+  'lua_ls',
 })
 
 vim.diagnostic.config({
@@ -22,24 +22,23 @@ vim.diagnostic.config({
   underline = true,
   update_in_insert = false,
   severity_sort = true,
-  globals = { "vim" },
+  globals = { 'vim' },
   float = {
-    border = "rounded",
+    border = 'rounded',
     source = true,
   },
   signs = {
     text = {
-        [vim.diagnostic.severity.ERROR] = "󰅚 ",
-        [vim.diagnostic.severity.WARN] = "󰀪 ",
-        [vim.diagnostic.severity.INFO] = "󰋽 ",
-        [vim.diagnostic.severity.HINT] = "󰌶 ",
-      },
-      {
+      [vim.diagnostic.severity.ERROR] = '󰅚 ',
+      [vim.diagnostic.severity.WARN] = '󰀪 ',
+      [vim.diagnostic.severity.INFO] = '󰋽 ',
+      [vim.diagnostic.severity.HINT] = '󰌶 ',
+    },
+    {
       numh1 = {
-        [vim.diagnostic.severity.ERROR] = "ErrorMsg",
-        [vim.diagnostic.severity.WARN] = "WarningMsg",
+        [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
+        [vim.diagnostic.severity.WARN] = 'WarningMsg',
       },
     },
   },
 })
-

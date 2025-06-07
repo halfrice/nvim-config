@@ -1,3 +1,4 @@
+-- stylua: ignore start
 -- cut / copy / paste
 vim.keymap.set("n", "<leader>y", "\"*y", { desc = "Copy to system clipboard" }) 
 vim.keymap.set("v", "<leader>y", "\"*y", { desc = "Copy to system clipboard" })
@@ -16,8 +17,8 @@ vim.keymap.set("n", "J", "mzJ`z") -- join next line with current line while keep
 -- navigation
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+-- vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
+-- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 -- misc
 -- make file executable
@@ -30,4 +31,4 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- search terms stay centered
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
-
+-- stylua: ignore end
