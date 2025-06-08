@@ -19,7 +19,7 @@ return {
         markdown = { 'prettierd', 'prettier' },
         graphql = { 'prettierd', 'prettier' },
         lua = { 'stylua' },
-        python = { 'ruff' },
+        python = { 'ruff_format' },
       },
       format_on_save = {
         lsp_fallback = true,
@@ -28,11 +28,11 @@ return {
       },
     })
 
-    vim.keymap.set({ 'n', 'v' }, '<leader>l', function()
+    vim.keymap.set({ 'n', 'v' }, '<leader>fz', function()
       conform.format({
         lsp_fallback = false,
         async = false,
-        timeout_ms = 500,
+        timeout_ms = 1000,
       })
     end, { desc = 'Format file or selection' })
   end,
