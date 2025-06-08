@@ -4,23 +4,17 @@ return {
   lazy = false,
   opts = {
     bigfile = { enabled = true },
-    explorer = { enabled = true },
+    explorer = { enabled = false },
     indent = { enabled = true },
-    input = { enabled = true },
+    input = { enabled = false },
     picker = { enabled = true },
     notifier = { enabled = true },
     quickfile = { enabled = true },
     scope = { enabled = true },
-    scroll = { enabled = true },
+    scroll = { enabled = false },
     statuscolumn = { enabled = true },
-    words = { enabled = true },
-    dashboard = {
-      enabled = true,
-      -- preset = {
-      --   header = [[
-      --   ]]
-      -- },
-    },
+    words = { enabled = false },
+    dashboard = { enabled = true },
   },
   keys = {
     -- stylua: ignore start

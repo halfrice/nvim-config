@@ -1,8 +1,8 @@
 return {
   'nvim-treesitter/nvim-treesitter',
   branch = 'master',
-  lazy = 'false',
   build = ':TSUpdate',
+  event = { 'BufReadPre', 'BufNewFile' },
   config = function()
     local treesitter = require('nvim-treesitter.configs')
 
@@ -48,7 +48,7 @@ return {
         'c',
         'python',
         'rust',
-        'astro',
+        'regex',
       },
     })
   end,
