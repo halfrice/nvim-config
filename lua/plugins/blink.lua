@@ -7,12 +7,12 @@ return {
   opts = {
     keymap = {
       preset = 'default',
-      ['<tab>'] = {},
-      ['<c-i>'] = { 'show', 'fallback' },
+      ['<c-z>'] = { 'show', 'fallback' },
       ['<c-q>'] = { 'hide', 'fallback' },
       ['<c-k>'] = { 'select_prev', 'fallback' },
       ['<c-j>'] = { 'select_next', 'fallback' },
-      ['<c-l>'] = { 'select_and_accept', 'fallback' },
+      ['<tab>'] = { 'select_and_accept', 'fallback' },
+      -- ['<tab>'] = {},
     },
     appearance = {
       nerd_font_variant = 'mono',

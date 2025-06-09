@@ -4,11 +4,15 @@ return {
   opts = {},
   dependencies = {
     'MunifTanjim/nui.nvim',
+    'rcarriga/nvim-notify',
   },
   config = function()
     local noice = require('noice')
 
     noice.setup({
+      -- cmdline = {
+      --   view = 'cmdline',
+      -- },
       lsp = {
         override = {
           ['vim.lsp.util.convert_input_to_markdown_lines'] = true,
