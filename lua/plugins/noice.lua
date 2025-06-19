@@ -10,9 +10,16 @@ return {
     local noice = require('noice')
 
     noice.setup({
-      -- cmdline = {
-      --   view = 'cmdline',
-      -- },
+      cmdline = {
+        -- view = 'cmdline',
+        format = {
+          cmdline = {
+            pattern = '^:',
+            icon = '',
+            lang = 'vim',
+          },
+        },
+      },
       lsp = {
         override = {
           ['vim.lsp.util.convert_input_to_markdown_lines'] = true,
@@ -25,6 +32,18 @@ return {
         long_message_to_split = true,
         lsp_doc_border = false,
       },
+      -- views = {
+      --   cmdline_popup = {
+      --     border = {
+      --       style = 'none',
+      --       padding = { 0, 1 },
+      --     },
+      --     filter_options = {},
+      --     win_options = {
+      --       winhighlight = 'NormalFloat:NormalFloat,FloatBorder:FloatBorder',
+      --     },
+      --   },
+      -- },
     })
   end,
 }
