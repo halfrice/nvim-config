@@ -3,6 +3,7 @@
 return {
   'nvim-lualine/lualine.nvim',
   dependencies = { 'nvim-tree/nvim-web-devicons' },
+  event = 'VeryLazy',
   config = function()
     local lualine = require('lualine')
     local lazy_status = require('lazy.status')
@@ -15,6 +16,12 @@ return {
       },
       sections = {
         lualine_x = {
+          -- Show macro recording message
+          {
+            require('noice').api.statusline.mode.get,
+            cond = require('noice').api.statusline.mode.has,
+          },
+          -- Show Lazy plugin updates
           {
             lazy_status.updates,
             cond = lazy_status.has_updates,

@@ -3,6 +3,7 @@ return {
   dependencies = {
     'nvim-tree/nvim-tree.lua',
   },
+  event = 'VeryLazy',
   config = function()
     local auto_session = require('auto-session')
 
