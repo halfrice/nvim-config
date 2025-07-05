@@ -17,12 +17,18 @@ return {
             separator = true,
           },
         },
+        indicator_icon = ' ',
+        separator_style = { '', '' },
+        tab_size = 0,
+        buffer_close_icon = '',
+        -- modified_icon = '',
+        close_icon = '',
       },
     })
 
     -- vim.cmd('autocmd VimEnter * hi BufferLineFill guibg=NONE')
     -- vim.cmd('autocmd VimEnter * hi BufferLineBufferSelected guibg=NONE')
-    -- vim.cmd('autocmd VimEnter * hi BufferLineBackground guibg=None')
+    -- vim.cmd('autocmd VimEnter * hi BufferLineBackground guibg=NONE')
 
     local keymap = vim.keymap
     keymap.set('n', '<leader>bb', '<cmd>BufferLinePick<cr>', { desc = 'Pick buffer' })

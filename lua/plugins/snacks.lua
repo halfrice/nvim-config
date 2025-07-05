@@ -6,7 +6,7 @@ return {
     bigfile = { enabled = true },
     explorer = { enabled = false },
     indent = { enabled = true },
-    input = { enabled = false },
+    input = { enabled = true },
     picker = { enabled = true },
     notifier = { enabled = true },
     quickfile = { enabled = true },
@@ -24,7 +24,7 @@ return {
     { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
     { "<leader>:", function() Snacks.picker.command_history() end, desc = "Command History" },
     { "<leader>n", function() Snacks.picker.notifications() end, desc = "Notification History" },
-    { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
+    -- { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
     -- find
     { "<leader>fb", function() Snacks.picker.buffers() end, desc = "Find Buffers" },
     { "<leader>fc", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },

@@ -13,6 +13,17 @@ return {
           sidebars = 'transparent',
           -- floats = 'transparent',
         },
+        -- lualine transparency fix (temp)
+        on_colors = function(colors)
+          colors.bg_statusline = colors.none
+        end,
+        -- bufferline transparency fix (temp)
+        on_highlights = function(highlight, colors)
+          -- TabLineFill is defaulted to black
+          highlight.TabLineFill = {
+            bg = colors.none,
+          }
+        end,
       })
 
       vim.cmd([[colorscheme tokyonight-night]])

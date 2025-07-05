@@ -53,6 +53,15 @@ opt.wrap = false -- long lines wrap and continue on the next line
 opt.mouse = 'a' -- enable the use of mouse clicks
 -- Blinking cursor
 opt.guicursor = 'n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait436-blinkoff218-blinkon218-Cursor/lCursor'
+opt.virtualedit = 'block' -- Cursor noclip
+
+-- Misc
+opt.inccommand = 'nosplit' -- preview incremental substitute
+opt.jumpoptions = 'view'
+opt.laststatus = 3 -- global statusline
+opt.pumblend = 10 -- Popup blend
+opt.pumheight = 10 -- Maximum number of entries in a popup
+opt.spelllang = { 'en' }
 
 -- Scroll
 opt.scrolloff = 8 -- minimum number of lines above and below cursor
@@ -67,7 +76,7 @@ opt.background = 'dark' -- "dark" or "light", used for highlight colors
 opt.laststatus = 3 -- tells when last window has status lines (3: always and ONLY the last window)
 opt.signcolumn = 'yes' -- when and how to display the sign column (yes: always)
 opt.termguicolors = true -- enable 24-bit RGB color in the TUI
-opt.colorcolumn = '80'
+-- opt.colorcolumn = '81'
 opt.ruler = false -- Disable the default ruler
 opt.showmode = false -- Dont show mode since we have a statusline
 

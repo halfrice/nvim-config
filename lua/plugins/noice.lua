@@ -11,11 +11,12 @@ return {
 
     noice.setup({
       cmdline = {
-        -- view = 'cmdline',
+        view = 'cmdline',
         format = {
           cmdline = {
             pattern = '^:',
-            icon = '',
+            icon = ':',
+            -- icon = '',
             lang = 'vim',
           },
         },
