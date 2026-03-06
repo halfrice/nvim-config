@@ -19,9 +19,9 @@ local opt = vim.opt
 opt.backspace = 'indent,eol,start' -- how backspace works at start of line
 
 -- Backups & Saves
--- opt.backup = false -- keep backup file after overwriting a file
+opt.backup = false -- keep backup file after overwriting a file
 -- opt.hidden = true -- don't unload buffer when it is abandoned
--- opt.swapfile = false -- whether to use a swapfile for a buffer
+opt.swapfile = false -- whether to use a swapfile for a buffer
 -- opt.updatetime = 100 -- after this many milliseconds flush swap file
 opt.autowrite = true -- Write contents of a file if it has been modified
 opt.confirm = true -- Confirm to save changes before exiting modified buffer
@@ -67,6 +67,7 @@ opt.spelllang = { 'en' }
 opt.scrolloff = 8 -- minimum number of lines above and below cursor
 
 -- Search
+opt.hlsearch = true -- highlight matches with last search pattern
 opt.ignorecase = true -- ignore case in search patterns
 opt.incsearch = true -- highlight match while typing search pattern
 opt.smartcase = true -- no ignore case when pattern has uppercase
